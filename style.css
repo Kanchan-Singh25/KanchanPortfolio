@@ -3,17 +3,23 @@
 h2{ letter-spacing: 2px;}
 a{ text-decoration: none;}
 
-#top-nav{ background: none !important; border-bottom: 1px solid grey; }
+.navbar { padding:1rem;}
+
+#top-nav{ background:#e1e7e7d9 !important; border-bottom:2px inset rgba(234, 229, 229, 0.488) }
+
+/* navbar link */
+.navbar-expand-lg .navbar-nav .nav-link { color:rgb(33, 78, 83); font-weight: 600;}
+.navbar-expand-lg .navbar-nav .nav-link:hover{ background-color: rgb(76, 162, 172); color:#fff ; border-radius:5px;}
+
 
 /* hero section */
-.wrap-2 .about-section{ align-items: center; justify-content: center; /*height:100vh;*/ padding:1rem; margin-block:2rem; margin-bottom: 10rem;}
-/* .wrap-2 .about-section .info{ padding-left: 30px;} */
+.wrap-2 .about-section{ align-items: center; justify-content: center; height:100vh; /*padding:1rem;*/ margin-block:3rem; /* margin-bottom: 10rem; */}
 
 /* icons */
 .wrap-2 span{ color:rgb(134, 124, 124); font-size: 18px; margin-right: 10px;  }
 .wrap-2 span:hover{ color:rgb(108, 102, 102);}
 
-.wrap-2 .about-section img{ border: 2px solid rgba(132, 77, 77, 0.502); /*border-top-left-radius: 20%; border-bottom-right-radius: 20%; */transition:all 0.3s}
+.wrap-2 .about-section img{/* border: 2px solid rgba(132, 77, 77, 0.502);*/ /*border-top-left-radius: 20%; border-bottom-right-radius: 20%; */transition:all 0.3s ; box-shadow: -3px -3px 2px grey;}
 .wrap-2 .about-section img:hover{ transform: translateY(3px);}
 
 
@@ -36,7 +42,7 @@ a{ text-decoration: none;}
 .project-details a{ color:rgba(97, 96, 95, 0.943); padding: 0 5px 0; transition: 0.2s;}
 .project-details a:hover{ box-shadow: 1px 2px;}
 .wrap-4 img { object-fit: cover; object-position: top; box-shadow: 5px 5px 2px rgb(202, 202, 199);transition: all 1s ease-in-out; background-color:black ;mix-blend-mode: darken;}
-.wrap-4 img:hover{transform:translatey(-3px) ; /*object-position: bottom;*/ border:2px solid rgb(169, 174, 175)}
+.wrap-4 img:hover{transform:translatey(-3px) ;border:2px solid rgb(169, 174, 175)}
 
 /* contact */
 .wrap-5{background-color: rgba(146, 162, 162, 0.37);}
@@ -63,13 +69,15 @@ textarea{ width:100%; margin-block:5px}
     /* html{ font-size: 14px;} */
     
     .about-section h1{ font-size:1.5rem;}
+    .wrap-2 .about-section { height:55vh}
 }
 
 /* medium device */
 @media  screen and (max-width:768px) {
     
     /* html{ font-size: 14px;} */
-    .wrap-2 .about-section .info { padding-block:10px; margin-bottom: 20px;}
+    .wrap-2 .about-section {height:70vh; padding:1rem ; text-align: center;}
+    .wrap-2 .about-section .info { padding-top:40px 0 20px 0; margin:10px 0 20px 0;}
 
     .wrap-4 .project-details h3 { margin-bottom: 15px;}
 
